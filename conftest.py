@@ -2,10 +2,10 @@
 import pytest
 from selenium import webdriver
 from locators import StellarBurgerslocators
-from helpers import InputData
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-import random
+from input_data import InputData
+
 
 
 @pytest.fixture
@@ -14,17 +14,6 @@ def driver():
     yield driver
     driver.quit()
 
-
-@pytest.fixture
-def login():
-    login = f'alekskashtanov{random.randrange(100000, 999000)}@gmail.com'
-    return login
-
-
-@pytest.fixture
-def password():
-    password = random.randrange(100000, 999999)
-    return password
 
 
 

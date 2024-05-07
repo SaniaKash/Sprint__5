@@ -3,8 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from conftest import driver,get_main_page
 from locators import StellarBurgerslocators
-from helpers import InputData
-
+from input_data import InputData
 
 
 class TestLogin:

@@ -48,7 +48,7 @@ class StellarBurgerslocators:
     ERROR_TEXT=(By.XPATH,"//*[text()='Некорректный пароль']")
 
     # СТРАНИЦА ВХОДА
-    LOGIN_PAGE = 'https://stellarburgers.nomoreparties.site/login'
+    URL_LOGIN_PAGE = 'https://stellarburgers.nomoreparties.site/login'
     # поле ввода логина на странице входа
     INPUT_EMAIL = (By.XPATH, ".//input[@name = 'name']")
     # поле ввода пароля на странице входа
